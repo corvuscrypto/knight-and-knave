@@ -26,4 +26,4 @@ In this protocol, there are 4 parties involved. Alice, Bob, Trent, and Victor. I
 7. Bob then decrypts the encrypted message `E(P[:n], M)` with his own copy of `P[:n]` to obtain `M`.
 8. Alice and Bob never use `P[:n]` and they both splice out those bytes to prevent reuse. 
 
-That's pretty much it. Some of these steps can be done in parallel.
+That's pretty much it. Some of these steps can be done in parallel. At no point in time do Trent and Victor have enough information themselves to actually decrypt the message.
